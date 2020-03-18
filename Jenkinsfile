@@ -1,5 +1,7 @@
 pipeline {
-	agent any
+	agent {
+		label '192.168.2.16'
+	}
 
 	stages {
 		stage('first stage') {
