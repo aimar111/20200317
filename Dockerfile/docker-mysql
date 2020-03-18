@@ -1,0 +1,7 @@
+FROM mysql:7
+
+MAINTAINER 2240930501@qq.com
+
+RUN
+
+CMD ["mysqld",""]
