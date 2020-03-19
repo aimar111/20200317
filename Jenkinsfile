@@ -14,6 +14,10 @@ pipeline {
 	  name = 'dinglin'
 	}
 
+	parameters {
+	  string(name: 'PERSON', defaultValue: 'DingLin', description: 'Who should I say hello to?')
+	}
+
 	stages {
 	  stage('first stage') {
 	    steps {
