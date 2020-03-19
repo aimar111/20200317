@@ -3,6 +3,14 @@ pipeline {
 	  label '192.168.2.16'
 	}
 
+	triggers {
+	  pollSCM(H/5 * * * *)
+	}
+	
+	environments {
+	  name = 'dinglin'
+	}
+
 	stages {
 	  stage('first stage') {
 	    steps {
